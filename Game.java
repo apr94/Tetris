@@ -9,10 +9,10 @@ import javax.swing.text.StyleConstants;
 
 public class Game implements Runnable {
 
-	
+
 	// These are various swing objects that are displayed in the GUI and
 	// display dynamic information from the court object.
-	
+
 	static Timer timer;
 	JTextArea updatesArea;
 	PlayArea court;
@@ -55,7 +55,7 @@ public class Game implements Runnable {
 			}
 		});
 
-		String descWords = "For Homework 10, I decided to implement the\n "
+		String descWords = "I decided to implement the\n "
 				+ "classic computer game: Tetris! Tetris is a puzzle\n "
 				+ "game where different tiles called \"Tetrominoes\"\n "
 				+ "are dropped on top of each other. The user can control\n "
@@ -76,10 +76,10 @@ public class Game implements Runnable {
 
 		String featWords = "This game has a preview feature, where you can view\n "
 				+ "the next dropped tile. It has constantly updated information\n "
-				+ "showing lines cleared, scores won and combos achieved. Also\n " 
+				+ "showing lines cleared, scores won and combos achieved. Also\n "
 				+ "an update box show developments in the game. Features like\n " +
 				"hard-drop, rotation and handling of wall kicks are implemented.\n" +
-				" Mouse handling by many button in the GUI are also present.";
+				" Mouse handling by many buttons in the GUI are also present.";
 
 		JTextPane desc = new JTextPane();
 		SimpleAttributeSet set = new SimpleAttributeSet();
@@ -263,13 +263,13 @@ public class Game implements Runnable {
 		frame.pack();
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setVisible(true);
-		
-		/* 
+
+		/*
 		 * EXPLANATION: SCORE DISPLAY
-		 * 
+		 *
 		 *  A method that continuously polls the court object for information
 		 *  of lines removed, combos achieved and points won. This information
-		 *  is then updated in the JLabels in the control panel. Also, it is 
+		 *  is then updated in the JLabels in the control panel. Also, it is
 		 *  checked to see if the game is over so as to switch to the main
 		 *  screen and possibly start another game.
 		 */
