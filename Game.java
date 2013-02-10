@@ -55,8 +55,7 @@ public class Game implements Runnable {
 			}
 		});
 
-		String descWords = "I decided to implement the\n "
-				+ "classic computer game: Tetris! Tetris is a puzzle\n "
+		String descWords = "Tetris is a puzzle\n "
 				+ "game where different tiles called \"Tetrominoes\"\n "
 				+ "are dropped on top of each other. The user can control\n "
 				+ "the Tetrominoes upto a certain extent so as to ensure that\n "
